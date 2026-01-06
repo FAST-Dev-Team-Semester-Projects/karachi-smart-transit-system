@@ -1,0 +1,183 @@
+/* Admin-only overrides to ensure form controls remain high-contrast
+   Scoped under .admin-root so global styles aren't touched. */
+
+/* 
+   COMMENTED OUT TO PREVENT CONFLICTS WITH CUSTOM STYLES
+   These rules were forcing all inputs/selects to be white/slate-900 with !important,
+   which breaks dark mode and custom component styling.
+*/
+
+/*
+.admin-root select,
+.admin-root select::-ms-expand,
+.admin-root select option {
+  color: #0f172a !important; 
+  background-color: #ffffff !important; 
+}
+
+.admin-root select {
+  -webkit-text-fill-color: #0f172a !important;
+}
+
+.admin-root select:-internal-autofill-selected {
+  -webkit-text-fill-color: #0f172a !important;
+}
+
+.admin-root option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.admin-root input,
+.admin-root textarea,
+.admin-root select {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+}
+
+.admin-root select,
+.admin-root select *,
+.admin-root option,
+.admin-root option * {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  -webkit-text-fill-color: #0f172a !important;
+}
+
+.admin-root select {
+  -webkit-appearance: menulist-button !important;
+  appearance: menulist-button !important;
+}
+
+.admin-root option:hover,
+.admin-root option:focus {
+  background-color: #e6f0ff !important;
+  color: #0f172a !important;
+}
+
+.admin-root select::-ms-value {
+  color: #0f172a !important;
+  background: #ffffff !important;
+}
+
+.admin-root select:-moz-focusring {
+  color: #0f172a !important;
+}
+
+.admin-root select::selection,
+.admin-root option::selection {
+  color: #0f172a !important;
+  background: #e6f0ff !important;
+}
+
+body .admin-root select,
+body .admin-root select option,
+body .admin-root select * {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+}
+
+.admin-root select,
+.admin-root option {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.admin-root .force-readable-select {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  -webkit-text-fill-color: #0f172a !important;
+}
+*/
+
+/* Pager buttons used by AdminTable */
+/*
+.admin-root .pager-button {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important; 
+}
+
+.admin-root .pager-button--disabled {
+  color: #0f172a !important;
+  background-color: #e6eef6 !important; 
+  border-color: #cbd5e1 !important;
+  pointer-events: none !important;
+}
+
+.admin-root .pager-button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.2) !important; 
+}
+*/
+
+/* Reset global link styles for admin panel to avoid conflicts with Tailwind classes */
+.admin-root a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.admin-root a:hover {
+  color: inherit;
+}
+
+/* Force high-contrast, white cards and readable text for admin buttons (card-like) */
+/*
+.admin-root button,
+.admin-root .card-button,
+.admin-root .group button {
+  background-color: #ffffff !important;
+  color: #0f172a !important; 
+  border-color: #e6eef6 !important; 
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06) !important;
+}
+
+.admin-root button:hover,
+.admin-root .card-button:hover,
+.admin-root .group button:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08) !important;
+}
+
+.admin-root button:focus,
+.admin-root .card-button:focus,
+.admin-root .group button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.18) !important;
+}
+
+.admin-root button *,
+.admin-root .card-button * {
+  color: #0f172a !important;
+}
+
+body .admin-root button,
+body .admin-root .card-button {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+*/
+
+/* Reusable input sizing helpers for admin forms */
+.admin-root .admin-input,
+.admin-root input.admin-input,
+.admin-root .admin-select,
+.admin-root select.admin-select {
+  box-sizing: border-box;
+  flex: 1 1 auto; /* allow inputs to grow and share space in flex rows */
+  min-width: 0; /* allow shrinking inside flex containers */
+  width: 100%;
+  max-width: 560px; /* comfortable width for names and text inputs on wide screens */
+}
+
+/* Smaller variant for short numeric inputs (explicit w-32 used in markup) */
+.admin-root .admin-input--small {
+  max-width: 8rem;
+}
+
+/* Datepicker input should also respect the same sizing helper */
+.admin-root .react-datepicker__input-container input.admin-input {
+  width: 100%;
+  max-width: 420px; /* slightly wider date input */
+  box-sizing: border-box;
+}

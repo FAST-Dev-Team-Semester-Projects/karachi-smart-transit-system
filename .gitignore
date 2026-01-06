@@ -1,0 +1,74 @@
+# -------------------------
+# Node.js / React frontend
+# -------------------------
+/frontend/node_modules/
+/frontend/dist/
+/frontend/dist-ssr/
+/frontend/.env
+/frontend/.vite/
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/pnpm-debug.log*
+/frontend/lerna-debug.log*
+/frontend/coverage/
+/frontend/logs/
+/frontend/*.local
+
+# -------------------------
+# Python / Flask backend
+# -------------------------
+/backend/__pycache__/
+/backend/*.pyc
+/backend/.env
+/backend/venv/
+/backend/*.log
+__pycache__/
+*.pyc
+.venv/
+/.venv/
+/backend/.venv/
+/venv/
+/env/
+/ENV/
+# pytest cache
+.pytest_cache/
+/**/.pytest_cache/
+/backend/.pytest_cache/
+
+# -------------------------
+# Database
+# -------------------------
+/database/*.sql~
+/database/*.sqlite
+/database/*.db
+/database/install_to_remote_db.py
+/database/install_passenger_plsql.py
+
+# -------------------------
+# OS files
+# -------------------------
+.DS_Store
+Thumbs.db
+*.ps1
+
+# -------------------------
+# Editor directories and files
+# -------------------------
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.log
+# IDE / Editor files
+# -------------------------
+.vscode/
+*.code-workspace
+.idea/
+*.sublime-workspace
+*.sublime-project
+.github/
