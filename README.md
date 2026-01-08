@@ -63,9 +63,9 @@ This project implements a complete transit management system demonstrating relat
 
 ## Project Structure
 
-- **Backend:** Flask (MySQL, session auth, admin API) — see [`backend/README.md`](backend/README.md)
-- **Frontend:** React + Vite SPA — see [`frontend/README.md`](frontend/README.md)
-- **Database:** MySQL schema & seeds — see [`database/README.md`](database/README.md)
+- **Backend:** Flask (MySQL, session auth, admin API) — see [backend/README.md](backend/README.md)
+- **Frontend:** React + Vite SPA — see [frontend/README.md](frontend/README.md)
+- **Database:** MySQL schema & seeds — see [database/README.md](database/README.md)
 
 ---
 
@@ -110,9 +110,9 @@ npm run dev
 
 ## Key Locations
 
-- **Backend entry:** `backend/app.py`
-- **Frontend entry:** `frontend/src/main.jsx`
-- **Admin UI:** `frontend/src/pages/admin/`
+- **Backend entry:** [backend/app.py](backend/app.py)
+- **Frontend entry:** [frontend/src/main.jsx](frontend/src/main.jsx)
+- **Admin UI:** [frontend/src/pages/admin/](frontend/src/pages/admin/)
 - **Database schema:** [database/ksts_schema.sql](database/ksts_schema.sql)
 - **Database ERD:** [database/ERD/ERD.png](database/ERD/ERD.png)
 
@@ -120,9 +120,9 @@ npm run dev
 
 ## Documentation
 
-- **Backend details:** [`backend/README.md`](backend/README.md)
-- **Database setup:** [`database/README.md`](database/README.md)
-- **API & analytics:** See [docs/](docs/) for API and analytics enhancements
+- **Backend details:** [backend/README.md](backend/README.md)
+- **Database setup:** [database/README.md](database/README.md)
+- **API & analytics:** [docs/](docs/) for API and analytics enhancements
 
 ---
 
